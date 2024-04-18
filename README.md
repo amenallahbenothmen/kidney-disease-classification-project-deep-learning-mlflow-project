@@ -1,1 +1,1 @@
-# kidney-disease-classification-project-deep-learning-mlflow-project
+# kidney-disease-classification-project
