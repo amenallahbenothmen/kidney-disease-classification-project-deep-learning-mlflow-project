@@ -81,3 +81,90 @@ x==========x]
 [2024-04-25 15:40:32,946: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2024-04-25 21:43:33,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 21:43:33,379: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 21:43:33,381: INFO: common: created directory at: artifacts]
+[2024-04-25 21:43:41,719: INFO: common: json file saved at: scores.json]
+[2024-04-25 21:43:44,439: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-25 21:43:44,885: INFO: builder_impl: Assets written to: C:\Users\amenm\AppData\Local\Temp\tmp_gb92s9w\model\data\model\assets]
+[2024-04-25 22:48:30,251: INFO: main: >>>>>> stage DATA Ingestion stage started <<<<<<]
+[2024-04-25 22:48:30,253: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:48:30,255: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:48:30,255: INFO: common: created directory at: artifacts]
+[2024-04-25 22:48:30,256: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-25 22:48:30,258: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-25 22:51:01,238: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-25 22:51:01,677: INFO: main: >>>>>> stage DATA Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-25 22:51:01,678: INFO: main: >>>>>> stage Prepare base model stage started <<<<<<]
+[2024-04-25 22:51:01,680: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:51:01,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:51:01,681: INFO: common: created directory at: artifacts]
+[2024-04-25 22:51:01,682: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-25 22:51:02,112: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-25 22:51:02,298: INFO: main: >>>>>> stage Prepare base model stage completed <<<<<<
+
+x==========x]
+[2024-04-25 22:51:02,299: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-04-25 22:51:02,300: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:51:02,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:51:02,303: INFO: common: created directory at: artifacts]
+[2024-04-25 22:51:02,304: INFO: common: created directory at: artifacts/training]
+[2024-04-25 22:51:27,454: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-25 22:51:27,455: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-25 22:51:27,456: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:51:27,457: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:51:27,458: INFO: common: created directory at: artifacts]
+[2024-04-25 22:51:27,716: ERROR: main: name 'model' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 48, in <module>
+    model_evalution.main()
+  File "c:\users\amenm\onedrive\desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\src\CNN_Classifier_Project\pipeline\stage_04_model_evaluation.py", line 15, in main
+    evaluation.evaluation()
+  File "c:\users\amenm\onedrive\desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\src\CNN_Classifier_Project\components\model_evaluation.py", line 52, in evaluation
+    self.score = self.model.evaluate(self.valid_generator)
+NameError: name 'model' is not defined
+[2024-04-25 22:51:43,156: INFO: main: >>>>>> stage DATA Ingestion stage started <<<<<<]
+[2024-04-25 22:51:43,158: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:51:43,160: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:51:43,161: INFO: common: created directory at: artifacts]
+[2024-04-25 22:51:43,161: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-25 22:51:43,161: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-25 22:53:44,922: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-25 22:53:45,355: INFO: main: >>>>>> stage DATA Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-25 22:53:45,356: INFO: main: >>>>>> stage Prepare base model stage started <<<<<<]
+[2024-04-25 22:53:45,357: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:53:45,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:53:45,359: INFO: common: created directory at: artifacts]
+[2024-04-25 22:53:45,359: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-25 22:53:45,704: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-25 22:53:45,896: INFO: main: >>>>>> stage Prepare base model stage completed <<<<<<
+
+x==========x]
+[2024-04-25 22:53:45,896: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-04-25 22:53:45,898: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:53:45,900: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:53:45,901: INFO: common: created directory at: artifacts]
+[2024-04-25 22:53:45,901: INFO: common: created directory at: artifacts/training]
+[2024-04-25 22:54:12,027: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-25 22:54:12,028: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-25 22:54:12,029: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-25 22:54:12,031: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-25 22:54:12,031: INFO: common: created directory at: artifacts]
+[2024-04-25 22:54:20,050: INFO: common: json file saved at: scores.json]
+[2024-04-25 22:54:21,322: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-25 22:54:21,839: INFO: builder_impl: Assets written to: C:\Users\amenm\AppData\Local\Temp\tmps3a9daha\model\data\model\assets]
+[2024-04-25 22:54:27,022: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\74e7d52277fd406a825dd7273b045eb4\artifacts\model\data]
+[2024-04-25 22:54:27,024: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\74e7d52277fd406a825dd7273b045eb4\artifacts\model\data\model]
+[2024-04-25 22:54:27,025: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\74e7d52277fd406a825dd7273b045eb4\artifacts\model\data\model\assets]
+[2024-04-25 22:54:27,029: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\74e7d52277fd406a825dd7273b045eb4\artifacts\model\data\model\variables]
+[2024-04-25 22:54:27,099: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
