@@ -75,8 +75,13 @@ class Training:
             steps_per_epoch=self.steps_per_epochs,
             validation_steps=self.validation_steps,
             validation_data=self.valid_generator
-        )   
+        )  
+
         self.save_model(
             path=self.config.trained_model_path,
             model=self.model
-        ) 
+        )
+
+        
+
+
