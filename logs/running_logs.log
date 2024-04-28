@@ -168,3 +168,74 @@ x==========x]
 [2024-04-25 22:54:27,099: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-04-28 16:12:18,425: INFO: stage_01_data_ingestion: >>>>>> stage DATA Ingestion stage started <<<<<<]
+[2024-04-28 16:12:18,427: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:12:18,430: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:12:18,431: INFO: common: created directory at: artifacts]
+[2024-04-28 16:12:18,431: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-28 16:12:18,432: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-28 16:21:02,309: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-28 16:21:02,783: INFO: stage_01_data_ingestion: >>>>>> stage DATA Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-04-28 16:21:15,083: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model stage started <<<<<<]
+[2024-04-28 16:21:15,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:21:15,086: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:21:15,087: INFO: common: created directory at: artifacts]
+[2024-04-28 16:21:15,087: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-28 16:21:15,585: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-28 16:21:15,748: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model stage completed <<<<<<
+
+x==========x]
+[2024-04-28 16:21:19,784: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-04-28 16:21:19,787: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:21:19,788: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:21:19,788: INFO: common: created directory at: artifacts]
+[2024-04-28 16:21:19,789: INFO: common: created directory at: artifacts/training]
+[2024-04-28 16:21:45,801: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-28 16:21:50,700: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-28 16:21:50,702: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:21:50,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:21:50,705: INFO: common: created directory at: artifacts]
+[2024-04-28 16:21:59,180: INFO: common: json file saved at: scores.json]
+[2024-04-28 16:21:59,180: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-04-28 16:22:16,097: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-28 16:22:16,099: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:22:16,101: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:22:16,101: INFO: common: created directory at: artifacts]
+[2024-04-28 16:22:24,340: INFO: common: json file saved at: scores.json]
+[2024-04-28 16:22:25,761: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-28 16:22:26,219: INFO: builder_impl: Assets written to: C:\Users\amenm\AppData\Local\Temp\tmpxiitjhpc\model\data\model\assets]
+[2024-04-28 16:22:32,105: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\a8d876f20ab44dec80112036228d13f8\artifacts\model\data]
+[2024-04-28 16:22:32,106: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\a8d876f20ab44dec80112036228d13f8\artifacts\model\data\model]
+[2024-04-28 16:22:32,106: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\a8d876f20ab44dec80112036228d13f8\artifacts\model\data\model\assets]
+[2024-04-28 16:22:32,109: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\a8d876f20ab44dec80112036228d13f8\artifacts\model\data\model\variables]
+[2024-04-28 16:22:32,184: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-04-28 16:26:50,666: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-04-28 16:26:50,668: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:26:50,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:26:50,671: INFO: common: created directory at: artifacts]
+[2024-04-28 16:26:50,672: INFO: common: created directory at: artifacts/training]
+[2024-04-28 16:27:41,776: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-04-28 16:27:48,437: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-04-28 16:27:48,438: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-28 16:27:48,440: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-28 16:27:48,440: INFO: common: created directory at: artifacts]
+[2024-04-28 16:27:57,708: INFO: common: json file saved at: scores.json]
+[2024-04-28 16:27:59,338: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-28 16:28:02,880: INFO: builder_impl: Assets written to: C:\Users\amenm\AppData\Local\Temp\tmpqjzf6u4y\model\data\model\assets]
+[2024-04-28 16:28:09,120: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\8b5cbb9190fe4fedaf20bfc460401c59\artifacts\model\data]
+[2024-04-28 16:28:09,310: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\8b5cbb9190fe4fedaf20bfc460401c59\artifacts\model\data\model]
+[2024-04-28 16:28:09,311: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\8b5cbb9190fe4fedaf20bfc460401c59\artifacts\model\data\model\assets]
+[2024-04-28 16:28:09,853: INFO: dir_util: creating C:\Users\amenm\OneDrive\Desktop\kidney classif\kidney-disease-classification-project-deep-learning-mlflow-project\mlruns\0\8b5cbb9190fe4fedaf20bfc460401c59\artifacts\model\data\model\variables]
+[2024-04-28 16:28:12,010: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
